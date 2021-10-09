@@ -22,6 +22,9 @@ module.exports = {
     alias: {
       Components: path.resolve(process.cwd(), "src/components/"),
       Src: path.resolve(process.cwd(), "src/"),
+      Pages: path.resolve(process.cwd(), "src/pages/"),
+      Routes: path.resolve(process.cwd(), "src/routes/"),
+      Types: path.resolve(process.cwd(), "src/types/"),
     },
   },
   module: {

@@ -17,7 +17,10 @@
     "jsx": "react-jsx",
     "paths": {
       "Src/*": ["./src/*"],
-      "Components/*": ["./src/components/*"]
+      "Components/*": ["./src/components/*"],
+      "Pages/*": ["./src/pages/*"],
+      "Routes/*": ["./src/routes/*"],
+      "Types/*": ["./src/types/*"]
     }
   },
   "files": ["custom.d.ts"],
