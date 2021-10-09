@@ -20,10 +20,13 @@ module.exports = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
     alias: {
+      Actions: path.resolve(process.cwd(), "src/actions/"),
       Components: path.resolve(process.cwd(), "src/components/"),
-      Src: path.resolve(process.cwd(), "src/"),
+      Enums: path.resolve(process.cwd(), "src/enums/"),
       Pages: path.resolve(process.cwd(), "src/pages/"),
+      Reducers: path.resolve(process.cwd(), "src/reducers/"),
       Routes: path.resolve(process.cwd(), "src/routes/"),
+      Src: path.resolve(process.cwd(), "src/"),
       Types: path.resolve(process.cwd(), "src/types/"),
     },
   },
