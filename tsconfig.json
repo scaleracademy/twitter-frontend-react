@@ -16,10 +16,13 @@
     "noEmit": false,
     "jsx": "react-jsx",
     "paths": {
-      "Src/*": ["./src/*"],
+      "Actions/*": ["./src/actions/*"],
       "Components/*": ["./src/components/*"],
+      "Enums/*": ["./src/enums/*"],
       "Pages/*": ["./src/pages/*"],
+      "Reducers/*": ["./src/reducers/*"],
       "Routes/*": ["./src/routes/*"],
+      "Src/*": ["./src/*"],
       "Types/*": ["./src/types/*"]
     }
   },
