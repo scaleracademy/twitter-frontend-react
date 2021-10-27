@@ -1,0 +1,37 @@
+name: Welcome first time contributors
+
+on:
+  pull_request_target:
+    types:
+      - opened
+  issues:
+    types:
+      - opened
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: |
+          Hello there ${{ github.actor }} 👋
+
+          Welcome to Moo (A Twitter Frontend App by Scaler Academy) !!💖🥳
+
+          Thank you and congratulations 🎉 for opening your very first issue in this project. Moo fosters an open and welcoming environment for al our contributors.🌸 Please adhere to our [Code Of Conduct](https://github.com/scaleracademy/twitter-frontend-react/blob/main/CODE_OF_CONDUCT.md).
+
+          Incase you want to claim this issue, please comment down below! We will try to get back to you as soon as we can.👀
+
+          Feel free to join us on [Scaler Academy's Discord](https://discord.gg/unxKbXyz). 👩‍💻 We would love to hear your interesting ideas and engage in discussions.💖
+
+        pr-message: |
+          Hello there ${{ github.actor }} 👋
+
+          Thank you and congrats 🎉 for opening your first PR on this project.✨
+
+          We will review it soon!
+
+          Scaler Academy fosters an open and welcoming environment for all our contributors.🌸 Please adhere to our [Code Of Conduct](https://github.com/scaleracademy/twitter-frontend-react/blob/main/CODE_OF_CONDUCT.md).
+
