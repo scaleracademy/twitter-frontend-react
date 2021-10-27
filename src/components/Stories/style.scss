@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.stories {
+  width: 100vw;
+  overflow-x: scroll;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .story,
+  .mystory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .storyimagewrapper,
+    .addstory {
+      border: 3px solid #3579f5;
+      padding: 2.5px;
+      border-radius: 15px;
+      height: 65px;
+      width: 65px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .addstory {
+      border-color: #808080;
+      padding: 3.5px;
+
+      .addwrapper {
+        height: 100%;
+        border: 2.5px dashed #9b9b9b;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          font-size: 35px;
+          color: #808080;
+        }
+      }
+    }
+
+    .storyname {
+      width: 75px;
+      margin-top: 3px;
+      word-break: break-all;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}

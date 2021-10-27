@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
-
 import { RootReducerType } from "Types/reducer/rootReducerType";
+
+import { Stories } from "../components/Stories";
 
 const Home = (): JSX.Element => {
   const userDetails = useSelector(
@@ -9,6 +10,7 @@ const Home = (): JSX.Element => {
 
   return (
     <>
+      <Stories />
       <p>Reducer Values</p>
       <ul>
         {Object.entries(userDetails).map((val, index) => (
