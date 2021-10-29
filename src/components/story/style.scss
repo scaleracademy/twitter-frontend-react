@@ -1,0 +1,63 @@
+.story__cmpt {
+  overflow-x: scroll;
+  display: flex;
+  padding: 20px 8px;
+  -ms-overflow-style: none;
+  scrollbar-width: 0;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .story__wrapper,
+  .my_story {
+    margin: 0 8px;
+
+    .story_image_wrapper,
+    .add_story {
+      border: 3px solid #3579f5;
+      padding: 2.5px;
+      border-radius: 15px;
+      height: 65px;
+      width: 65px;
+      cursor: pointer;
+
+      .story_image {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .add_story {
+      border-color: #808080;
+      padding: 3.5px;
+
+      .add_wrapper {
+        height: 100%;
+        border: 2.5px dashed #9b9b9b;
+        border-radius: 10px;
+        text-align: center;
+
+        .add_icon {
+          font-size: 35px;
+          color: #808080;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    .story_name {
+      margin-top: 3px;
+      word-break: break-all;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
