@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { RootReducerType } from "Types/reducer/rootReducerType";
 
-import { Stories } from "../components/Stories";
+import { Stories } from "Components/story";
 
 const Home = (): JSX.Element => {
   const userDetails = useSelector(
